@@ -11,7 +11,7 @@ lastUpdated: true
 
 This relies on an already configured nvim environment and an understanding of how to install and configure plugins.
 
-Mine is also set up differently to how nvim's quickstart tutorial/base configs are, so it might be confusing if you're new to nvim. Take a look in [My Dev Env](/projects/devenv) write-up for a better understanding.
+Mine is also set up differently to how nvim's quickstart tutorial/base configs are, so it might be confusing if you're new to nvim. Take a look in [My Dev Env](/projects/code/devenv) write-up for a better understanding.
 
 ## Caveats
 ::: danger

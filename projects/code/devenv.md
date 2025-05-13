@@ -21,7 +21,7 @@ My dotfiles are stored on a public GitHub repo: [dade/dotfiles](https://github.c
 
 Key points are that this setup is similar to NeoVim Quickstart, which I recommend you use as a starting boilerplate, and then modified for my needs and split into individual files for easier management of specific plugins.
 
-It also contains a setup for using `nvim` as an external editor for the Godot game engine. You can read the setup in [Godot x NeoVim](/projects/godot_x_neovim)
+It also contains a setup for using `nvim` as an external editor for the Godot game engine. You can read the setup in [Godot x NeoVim](/projects/code/godot_x_neovim)
 
 ## Brief Explanations
 
