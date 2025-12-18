@@ -31,7 +31,7 @@ export default defineConfig({
 					items: [
 						{ text: "Index", link: "projects/index" },
 						{ text: "My Dev Environment", link: "projects/code/devenv" },
-						{ text: "Godot x Neovim Setup", link: "projects/code/godot_x_neovim" },
+						{ text: "Godot x Neovim Setup", link: "projects/code/godot_x_neovim" }
 					]
 				},
 				{
@@ -45,6 +45,7 @@ export default defineConfig({
 					text: "Writing",
 					items: [
 						{ text: "Index", link: "projects/writing/index" },
+            { text: "Finding the Fun Again", link: "projects/writing/omarch.md" }
 					]
 				}
 			]
