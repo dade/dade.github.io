@@ -45,7 +45,7 @@ export default defineConfig({
 					text: "Writing",
 					items: [
 						{ text: "Index", link: "projects/writing/index" },
-            { text: "Finding the Fun Again", link: "projects/writing/omarch.md" }
+            { text: "Finding the Fun Again", link: "projects/writing/omarchy.md" }
 					]
 				}
 			]
