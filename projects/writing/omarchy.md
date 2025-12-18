@@ -44,3 +44,11 @@ This is _NOT_ for everyone. This is for a particular group of people that really
 Rant over. Gushing over Omarchy over.
 
 Fuck Windows, for now.
+
+### Update After Another Evening With Omarchy
+I've run into issues, but with the prolific nature of a lot of the underlying systems (Wayland and Arch) I was able to find a pretty solid fix. It took a while, but it was fixable.
+
+The issue was that while clicking and dragging the camera in Final Fantasy XIV, keyboard input got pushed aside and blocked. Very annoying. But... Wine exists, as does Valve's Gamescope. These two combined resolved that issue. Next up is to get Star Citizen working, and then I have almost no reason to dual-boot Windows.
+
+## To Reiterate
+Fuck Windows, for now.
