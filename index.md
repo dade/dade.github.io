@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Dale Emasiri"
   text: "Me, Myself, and <code><span style='color: purple'>i<span style='color: grey'>=</span><span style='color: orange'>0</span></code>"
-  tagline: Musings, personal projects, and trying to find a job in today's climate...
+  tagline: Musings, personal projects, and trying to sustain work as an independent contractor!
   actions:
     - theme: brand
       text: Personal Projects
@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: About Me
       link: /about/me
+    - theme: brand
+      text: Professional
+      link: /professional/
 
 features:
   - title: Games Industry Veteran
