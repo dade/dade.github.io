@@ -1,0 +1,149 @@
+/**
+ * Catppuccin theme: Mocha (dark) and Latte (light), Mauve accent.
+ * Palette values come from the official @catppuccin/palette package.
+ * Swap --ctp-accent below to change the accent colour site-wide.
+ */
+
+@import '@catppuccin/palette/css/catppuccin.css';
+
+/* Flavour aliases: components reference --ctp-<name>, never a flavour directly. */
+:root {
+  --ctp-rosewater: var(--ctp-latte-rosewater);
+  --ctp-flamingo: var(--ctp-latte-flamingo);
+  --ctp-pink: var(--ctp-latte-pink);
+  --ctp-mauve: var(--ctp-latte-mauve);
+  --ctp-red: var(--ctp-latte-red);
+  --ctp-maroon: var(--ctp-latte-maroon);
+  --ctp-peach: var(--ctp-latte-peach);
+  --ctp-yellow: var(--ctp-latte-yellow);
+  --ctp-green: var(--ctp-latte-green);
+  --ctp-teal: var(--ctp-latte-teal);
+  --ctp-sky: var(--ctp-latte-sky);
+  --ctp-sapphire: var(--ctp-latte-sapphire);
+  --ctp-blue: var(--ctp-latte-blue);
+  --ctp-lavender: var(--ctp-latte-lavender);
+  --ctp-text: var(--ctp-latte-text);
+  --ctp-subtext1: var(--ctp-latte-subtext1);
+  --ctp-subtext0: var(--ctp-latte-subtext0);
+  --ctp-overlay2: var(--ctp-latte-overlay2);
+  --ctp-overlay1: var(--ctp-latte-overlay1);
+  --ctp-overlay0: var(--ctp-latte-overlay0);
+  --ctp-surface2: var(--ctp-latte-surface2);
+  --ctp-surface1: var(--ctp-latte-surface1);
+  --ctp-surface0: var(--ctp-latte-surface0);
+  --ctp-base: var(--ctp-latte-base);
+  --ctp-mantle: var(--ctp-latte-mantle);
+  --ctp-crust: var(--ctp-latte-crust);
+}
+
+[data-theme='dark'] {
+  --ctp-rosewater: var(--ctp-mocha-rosewater);
+  --ctp-flamingo: var(--ctp-mocha-flamingo);
+  --ctp-pink: var(--ctp-mocha-pink);
+  --ctp-mauve: var(--ctp-mocha-mauve);
+  --ctp-red: var(--ctp-mocha-red);
+  --ctp-maroon: var(--ctp-mocha-maroon);
+  --ctp-peach: var(--ctp-mocha-peach);
+  --ctp-yellow: var(--ctp-mocha-yellow);
+  --ctp-green: var(--ctp-mocha-green);
+  --ctp-teal: var(--ctp-mocha-teal);
+  --ctp-sky: var(--ctp-mocha-sky);
+  --ctp-sapphire: var(--ctp-mocha-sapphire);
+  --ctp-blue: var(--ctp-mocha-blue);
+  --ctp-lavender: var(--ctp-mocha-lavender);
+  --ctp-text: var(--ctp-mocha-text);
+  --ctp-subtext1: var(--ctp-mocha-subtext1);
+  --ctp-subtext0: var(--ctp-mocha-subtext0);
+  --ctp-overlay2: var(--ctp-mocha-overlay2);
+  --ctp-overlay1: var(--ctp-mocha-overlay1);
+  --ctp-overlay0: var(--ctp-mocha-overlay0);
+  --ctp-surface2: var(--ctp-mocha-surface2);
+  --ctp-surface1: var(--ctp-mocha-surface1);
+  --ctp-surface0: var(--ctp-mocha-surface0);
+  --ctp-base: var(--ctp-mocha-base);
+  --ctp-mantle: var(--ctp-mocha-mantle);
+  --ctp-crust: var(--ctp-mocha-crust);
+}
+
+/* Infima mapping (applies to both flavours via the aliases above). */
+:root,
+[data-theme='dark'] {
+  --ctp-accent: var(--ctp-mauve);
+
+  --ifm-color-primary: var(--ctp-accent);
+  --ifm-color-primary-dark: color-mix(in srgb, var(--ctp-accent) 90%, var(--ctp-crust));
+  --ifm-color-primary-darker: color-mix(in srgb, var(--ctp-accent) 85%, var(--ctp-crust));
+  --ifm-color-primary-darkest: color-mix(in srgb, var(--ctp-accent) 70%, var(--ctp-crust));
+  --ifm-color-primary-light: color-mix(in srgb, var(--ctp-accent) 90%, var(--ctp-text));
+  --ifm-color-primary-lighter: color-mix(in srgb, var(--ctp-accent) 85%, var(--ctp-text));
+  --ifm-color-primary-lightest: color-mix(in srgb, var(--ctp-accent) 70%, var(--ctp-text));
+  --ifm-color-primary-contrast-background: color-mix(in srgb, var(--ctp-accent) 15%, var(--ctp-base));
+  --ifm-color-primary-contrast-foreground: var(--ctp-text);
+
+  --ifm-color-info: var(--ctp-blue);
+  --ifm-color-info-dark: var(--ctp-blue);
+  --ifm-color-info-contrast-background: color-mix(in srgb, var(--ctp-blue) 15%, var(--ctp-base));
+  --ifm-color-info-contrast-foreground: var(--ctp-text);
+  --ifm-color-success: var(--ctp-green);
+  --ifm-color-success-dark: var(--ctp-green);
+  --ifm-color-success-contrast-background: color-mix(in srgb, var(--ctp-green) 15%, var(--ctp-base));
+  --ifm-color-success-contrast-foreground: var(--ctp-text);
+  --ifm-color-warning: var(--ctp-yellow);
+  --ifm-color-warning-dark: var(--ctp-yellow);
+  --ifm-color-warning-contrast-background: color-mix(in srgb, var(--ctp-yellow) 15%, var(--ctp-base));
+  --ifm-color-warning-contrast-foreground: var(--ctp-text);
+  --ifm-color-danger: var(--ctp-red);
+  --ifm-color-danger-dark: var(--ctp-red);
+  --ifm-color-danger-contrast-background: color-mix(in srgb, var(--ctp-red) 15%, var(--ctp-base));
+  --ifm-color-danger-contrast-foreground: var(--ctp-text);
+  --ifm-color-secondary: var(--ctp-surface1);
+  --ifm-color-secondary-contrast-background: var(--ctp-surface0);
+  --ifm-color-secondary-contrast-foreground: var(--ctp-text);
+
+  --ifm-background-color: var(--ctp-base);
+  --ifm-background-surface-color: var(--ctp-mantle);
+  --ifm-font-color-base: var(--ctp-text);
+  --ifm-font-color-secondary: var(--ctp-subtext0);
+  --ifm-heading-color: var(--ctp-text);
+  --ifm-link-color: var(--ctp-accent);
+  --ifm-hr-background-color: var(--ctp-surface0);
+  --ifm-toc-border-color: var(--ctp-surface0);
+  --ifm-table-border-color: var(--ctp-surface1);
+  --ifm-table-stripe-background: var(--ctp-mantle);
+
+  /* Infima's grey scale drives borders, hovers and muted text. */
+  --ifm-color-emphasis-0: var(--ctp-base);
+  --ifm-color-emphasis-100: var(--ctp-mantle);
+  --ifm-color-emphasis-200: var(--ctp-surface0);
+  --ifm-color-emphasis-300: var(--ctp-surface1);
+  --ifm-color-emphasis-400: var(--ctp-surface2);
+  --ifm-color-emphasis-500: var(--ctp-overlay0);
+  --ifm-color-emphasis-600: var(--ctp-overlay1);
+  --ifm-color-emphasis-700: var(--ctp-subtext0);
+  --ifm-color-emphasis-800: var(--ctp-subtext1);
+  --ifm-color-emphasis-900: var(--ctp-text);
+  --ifm-color-emphasis-1000: var(--ctp-text);
+
+  --ifm-navbar-background-color: var(--ctp-mantle);
+  --ifm-navbar-link-color: var(--ctp-text);
+  --ifm-dropdown-background-color: var(--ctp-mantle);
+  --ifm-menu-color: var(--ctp-subtext1);
+  --ifm-menu-color-background-active: var(--ctp-surface0);
+  --ifm-menu-color-background-hover: var(--ctp-surface0);
+  --ifm-card-background-color: var(--ctp-mantle);
+
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: var(--ctp-surface0);
+  --docusaurus-highlighted-code-line-bg: var(--ctp-surface0);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--ctp-crust);
+  --ifm-footer-color: var(--ctp-subtext0);
+  --ifm-footer-link-color: var(--ctp-subtext1);
+  --ifm-footer-title-color: var(--ctp-text);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--ctp-overlay2) 30%, transparent);
+}
