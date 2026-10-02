@@ -108,6 +108,9 @@ function Motto() {
       <span aria-hidden="true">Me, Myself, and </span>
       <code className={styles.mottoCode} aria-hidden="true">
         <span>
+          {/* Zero-width space keeps a text baseline while the text is empty,
+              so the box doesn't shift vertically between words. */}
+          {'\u200B'}
           <TypedText text={text} />
         </span>
         <span className={clsx(styles.caret, typing && styles.caretTyping)} />
